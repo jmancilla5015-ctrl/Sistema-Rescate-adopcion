@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario para reportar animales rescatados">
+    <title>Reportar rescate - Sistema Animal</title>
+</head>
+<body>
+    <header>
+        <h1>Registro de animales rescatados</h1>
+        <p>Formulario para registrar un nuevo caso de rescate.</p>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="reportar.html">Reportar rescate</a></li>
+                <li><a href="rescates.html">Consultar rescates</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Formulario de registro</h2>
+            <form action="#" method="get">
+                <fieldset>
+                    <legend>Datos del reportante</legend>
+                    <p>
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="100">
+                    </p>
+                    <p>
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo" name="correo" required>
+                    </p>
+                    <p>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{10}" title="Ingrese un número de 10 dígitos">
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Información del animal</legend>
+                    <p>
+                        <label for="especie">Especie del animal:</label>
+                        <select id="especie" name="especie" required>
+                            <option value="">Seleccione una especie</option>
+                            <option value="perro">Perro</option>
+                            <option value="gato">Gato</option>
+                            <option value="fauna-silvestre">Fauna silvestre</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="edad">Edad aproximada:</label>
+                        <input type="number" id="edad" name="edad" min="0" max="100">
+                    </p>
+                    <p>
+                        <label for="ubicacion">Lugar del rescate:</label>
+                        <input type="text" id="ubicacion" name="ubicacion" required minlength="5">
+                    </p>
+                    <p>
+                        <label for="descripcion">Descripción del caso:</label>
+                        <textarea id="descripcion" name="descripcion" rows="5" cols="40" required minlength="10"></textarea>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Información del rescate</legend>
+                    <p>
+                        <label for="fecha">Fecha del rescate:</label>
+                        <input type="date" id="fecha" name="fecha" required>
+                    </p>
+                    <p>
+                        <label for="estado">Estado del animal:</label>
+                        <select id="estado" name="estado" required>
+                            <option value="">Seleccione un estado</option>
+                            <option value="rescatado">Rescatado</option>
+                            <option value="tratamiento">En tratamiento</option>
+                            <option value="disponible">Disponible para adopción</option>
+                            <option value="adoptado">Adoptado</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="responsable">Responsable asignado:</label>
+                        <input type="text" id="responsable" name="responsable" required>
+                    </p>
+                </fieldset>
+                <p>
+                    <button type="submit">Registrar rescate</button>
+                    <button type="reset">Limpiar formulario</button>
+                </p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Sistema de Control de Rescate y Adopción Animal</p>
+        <p>Formulario desarrollado con HTML5</p>
+    </footer>
+</body>
+</html>

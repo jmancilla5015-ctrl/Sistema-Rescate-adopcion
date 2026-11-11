@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Consulta de animales rescatados">
+    <title>Consultar rescates - Sistema Animal</title>
+</head>
+<body>
+    <header>
+        <h1>Reporte de animales rescatados</h1>
+        <p>Consulta de los casos registrados en el sistema.</p>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="reportar.html">Reportar rescate</a></li>
+                <li><a href="rescates.html">Consultar rescates</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Listado de rescates registrados</h2>
+            <p>A continuación se muestran ejemplos de animales registrados en el sistema de rescate y adopción.</p>
+            <table>
+                <caption>Registro de casos de rescate animal</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Código</th>
+                        <th scope="col">Fecha</th>
+                        <th scope="col">Especie</th>
+                        <th scope="col">Ubicación</th>
+                        <th scope="col">Responsable</th>
+                        <th scope="col">Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>RES-001</td>
+                        <td>2026-09-25</td>
+                        <td>Perro</td>
+                        <td>Quito</td>
+                        <td>Voluntario</td>
+                        <td>Rescatado</td>
+                    </tr>
+                    <tr>
+                        <td>RES-002</td>
+                        <td>2026-09-28</td>
+                        <td>Gato</td>
+                        <td>Guayaquil</td>
+                        <td>Veterinario</td>
+                        <td>En tratamiento</td>
+                    </tr>
+                    <tr>
+                        <td>RES-003</td>
+                        <td>2026-10-02</td>
+                        <td>Fauna silvestre</td>
+                        <td>Cuenca</td>
+                        <td>Voluntario</td>
+                        <td>Disponible para adopción</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Nota: Los registros presentados son datos ficticios utilizados como ejemplo académico.</p>
+        </section>
+        <section>
+            <h2>Estados de seguimiento</h2>
+            <dl>
+                <dt>Rescatado</dt>
+                <dd>Animal que acaba de ingresar al sistema.</dd>
+                <dt>En tratamiento</dt>
+                <dd>Animal que recibe atención veterinaria.</dd>
+                <dt>Disponible para adopción</dt>
+                <dd>Animal que puede iniciar un proceso de adopción.</dd>
+                <dt>Adoptado</dt>
+                <dd>Animal que ya cuenta con un nuevo hogar.</dd>
+            </dl>
+        </section>
+        <section>
+            <h2>Registrar otro rescate</h2>
+            <p><a href="reportar.html">Ir al formulario de registro</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>Sistema de Control de Rescate y Adopción Animal</p>
+        <p>Proyecto académico - HTML5</p>
+    </footer>
+</body>
+</html>
